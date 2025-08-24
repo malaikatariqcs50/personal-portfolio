@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malaika's Portfolio</title>
+    <link href="public\icon.png" rel="icon" type="image/gif" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Back to top button styling-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Back to top button styling-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9fa51d37bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <a id="button"></a>
+    <div class="header" id="home">
+      <div class="logo">
+        <h2>Malaika</h2>
+        <h2>Malaika</h2>
+      </div>
+      <div class="__container">
+        <div class="navbar2">
+          <div class="header2">
+            <ul class="menu2">
+              <li data-section="home">Home</li>
+              <li data-section="about">About</li>
+              <li data-section="project">Project</li>
+              <li data-section="experience">Experience</li>
+              <li data-section="skills">Skills</li>
+              <li data-section="contact">Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="header-container">
+      <div class="content">
+        <h1>Hi, I'm Malaika Tariq</h1>
+        <span id="element"></span>
+        <hr />
+        <p>
+          I am deeply passionate about technology and its advancements. The
+          ubiquitous presence of computers only serves to intensify my
+          curiosity. I am dedicated, punctual, and value being a dependable team
+          player.
+        </p>
+        <div class="social_media">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/malaikatariq345"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-bounce button"></i
+            ></a>
+            <a href="https://github.com/malaikatariqcs50" target="_blank"
+              ><i class="fa-brands fa-github fa-beat button"></i
+            ></a>
+          </div>
+          <div class="resume-container">
+            <a href="./public/Resume.pdf" target="_blank">
+              <div class="resume">
+                <div class="text">Resume</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="__content">
+          <div class="front">
+            <img class="myPic" src="public/myself.jpg" alt="photo" />
+          </div>
+          <div class="back">
+            <h1>HOBBIES</h1>
+            <ul>
+              <li>Chess</li>
+              <br />
+              <li>Travelling</li>
+              <br />
+              <li>Anime</li>
+              <br />
+              <li>Socializing</li>
+              <br />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container reveal" id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h1>A Bit About Me</h1>
+          <br />
+          <p>
+            I'm currently in my 3rd year, persuing a Computer Science degree at
+            National University of Modern Languages in Islamabad. As a developer, I've collaborated with
+            teams to create functional applications and write clean,
+            maintainable code, gaining valuable experience in web development. I
+            also enjoy contributing to open-source projects and in my free
+            time, I relax and uplift my mood through cooking.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Content -->
+    <section class="wave-container">
+      <h1 class="wave">
+        <span style="--i: 1">S</span>
+        <span style="--i: 2">c</span>
+        <span style="--i: 3">r</span>
+        <span style="--i: 4">o</span>
+        <span style="--i: 5">l</span>
+        <span style="--i: 6">l</span>
+        <span></span>
+        <span style="--i: 7">D</span>
+        <span style="--i: 8">o</span>
+        <span style="--i: 9">w</span>
+        <span style="--i: 10">n</span>
+        <br />
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+      </h1>
+    </section>
+    <section id="project">
+      <div class="container reveal">
+        <div class="projects">
+          <span class="letter">P</span>
+          <span class="letter">r</span>
+          <span class="letter">o</span>
+          <span class="letter">j</span>
+          <span class="letter">e</span>
+          <span class="letter">c</span>
+          <span class="letter">t</span>
+          <span class="letter">s</span>
+        </div>
+
+        <div class="text-box educonnect-project">
+          <div>
+            <a
+              target="_blank"
+              href="https://educonnect-eta.vercel.app/"
+            >
+              <img
+                src="public/Screenshot (119).png"
+                alt="image"
+                onmouseover="hoverImage2(this)"
+                onmouseout="unhoverImage2(this)"
+              />
+            </a>
+          </div>
+          <div class="project-content">
+            <h1>EduConnect</h1>
+            <p>
+              A full-stack MERN + Tailwind CSS online learning platform with secure user
+              authentication.
+              Implemented video lessons, automated progress tracking, interactive exercises, and
+              achievement badges for student engagement.
+              Developed features for ratings, course resources, and integrated student support.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/malaikatariqcs50/Educonnect"
+                target="_blank"
+                ><i class="fa-brands fa-github fa-beat"></i
+              ></a>
+              <a href="https://educonnect-eta.vercel.app/" target="_blank" class="tags">Visit Live Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <div class="text-container">
+          <div class="text-box">
+            <a target="_blank" href="https://github.com/malaikatariqcs50/task-manager/">
+              <img
+                src="public/taskmanager.png"
+                alt="image"
+                onmouseover="hoverImage3(this)"
+                onmouseout="unhoverImage3(this)"
+              />
+            </a>
+            <div class="project-content">
+              <h1>Task Manager</h1>
+              <p>
+                A dynamic Task Management application with PHP for backend and HTML, CSS, JavaScript for frontend. Implemented CRUD operations (add, edit, delete) and task status updates (Pending, Completed, Canceled). Integrated <span>drag-and-drop</span> functionality for intuitive task reordering. Ensured a responsive and user-friendly interface for seamless task organization.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/malaikatariqcs50/task-manager/"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-beat"></i
+                ></a>
+                <button class="tags">Php</button>
+                <button class="tags">javascript</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <div class="text-container ">
+          <div class="text-box resume-project">
+            <a target="_blank" href="https://github.com/malaikatariqcs50/resume">
+              <img
+                src="public/Picsart_25-08-24_03-33-19-474.jpg"
+                alt="image"
+                onmouseover="hoverImage4(this)"
+                onmouseout="unhoverImage4(this)"
+              />
+            </a>
+            <div class="project-content">
+              <h1>Resume</h1>
+              <p>
+                Created this custom resume with HTML, CSS, and Tailwind CSS, featuring
+print-specic styling for professional PDF and hard copy formats
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/malaikatariqcs50/resume"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-beat"></i
+                ></a>
+                <button class="tags">Html</button>
+                <button class="tags">Css</button>
+                <button class="tags">Tailwind</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <br />
+
+    <section id="experience">
+      <div class="container reveal">
+        <div class="projects">
+          <span class="letter">E</span>
+          <span class="letter">x</span>
+          <span class="letter">p</span>
+          <span class="letter">e</span>
+          <span class="letter">r</span>
+          <span class="letter">i</span>
+          <span class="letter">e</span>
+          <span class="letter">n</span>
+          <span class="letter">c</span>
+          <span class="letter">e</span>
+        </div>
+
+        <section>
+      <div class="container reveal">
+        <div class="text-container">
+          <div class="text-box ezitech-project">
+            <a href="https://register.ezitech.org/" target="_blank">
+              <img
+                src="public/Screenshot (123).png"
+                alt="image"
+                onmouseover="hoverImage5(this)"
+                onmouseout="unhoverImage5(this)"
+              />
+              </a>
+            <div class="project-content">
+              <h1>Ezitech Company</h1>
+              <p>
+                <span>Mern Stack Developer</span><br><br>
+                Completed and enhanced Admin Panel with student/manager tracking,
+                automated salary distribution, and secure invoice/payment verication.
+                Implemented Manager Portal features: certicate issuance, salary
+                withdrawals, task tracking, and compliance alerts.
+                Developed Public Prole system with verication, recommendations,
+                and advanced candidate lters.
+                Built University, HR, and 3rd-Party Aliate portals for student tracking,
+                hiring, and referral management.
+              </p>
+              <div class="project-links">
+                <button class="tags">Mern</button>
+                <button class="tags">Php</button>
+                <button class="tags">Restful Api</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div>
+    </section>
+
+    <div class="skills-container" id="skills">
+      <div class="container reveal">
+        <div class="skills">
+          <div class="skills-header">
+            <span class="letter">S</span>
+            <span class="letter">k</span>
+            <span class="letter">i</span>
+            <span class="letter">l</span>
+            <span class="letter">l</span>
+            <span class="letter">s</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-grid container reveal frontend">
+              <div class="text-container">
+                <div class="text-box">
+              <h3>Languages</h3>
+              <br>
+              <br>
+                <h4>Expert</h4>
+                <br>
+                  <li>JavaScript</li>
+                  <li>Php</li>
+                  <br>
+                <h4>Basic</h4>
+                <li>TypeScript (Learning)</li>
+                <li>Python (basic)</li>
+                <li>C/C++/C# (basic)</li>
+                <li>Java (basic)</li>
+                </div>
+              </div>
+            </div>
+            <div class="skill-grid container revealtop backend">
+              <div class="text-container">
+                <div class="text-box">
+              <h3>Frameworks/Libraries</h3>
+              <br>
+              <br>
+              <h4>Expert</h4>
+              <br>
+              <li>React</li>
+              <li>Node (+Express)</li>
+              <br>
+              <h4>Basic</h4>
+              <li>Next.js (Learning)</li>
+              <li>Laravel (basic)</li>
+              <li>.NET (basic)</li>
+                </div>
+              </div>
+            </div>
+            <div class="skill-grid container reveal cloud">
+              <div class="text-container">
+                <div class="text-box">
+
+              <h3>Cloud/Database</h3>
+              <br>
+              <br>
+              <h4>Expert</h4>
+              <br>
+              <li>MongoDb</li>
+              <li>MySql</li>
+              <li>NoSql</li>
+              <li>PostgreSql</li>
+              <li>Aws</li>
+              <li>Cloudinary</li>
+                                
+                </div>
+              </div>
+            </div>
+            <div class="skill-grid conatiner revealtop database">
+              <div class="text-container">
+                <div class="text-box">
+
+              <h3>Tools</h3>
+              <br><br>
+              <h4>Expert</h4>
+              <br>
+              <li>CI/CD</li>
+              <li>Vercel and more</li>
+              <li>Git, Github</li>
+              <li>Postman</li>
+                                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+      <div class="container reveal">
+        <main>
+          <div class="title">
+            <span class="letter">C</span>
+            <span class="letter">o</span>
+            <span class="letter">n</span>
+            <span class="letter">t</span>
+            <span class="letter">a</span>
+            <span class="letter">c</span>
+            <span class="letter">t</span>
+            <span class="letter"> </span>
+            <span class="letter"> </span>
+            <span class="letter"> </span>
+            <span class="letter">M</span>
+            <span class="letter">e</span>
+            <span class="letter"> </span>
+            <span class="letter"> </span>
+            <span class="letter"> </span>
+            <span class="letter">T</span>
+            <span class="letter">h</span>
+            <span class="letter">r</span>
+            <span class="letter">o</span>
+            <span class="letter">u</span>
+            <span class="letter">g</span>
+            <span class="letter">h</span>
+          </div>
+          <div class="mycontact">
+          <div class="footer-icons">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malaikatariq800@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope fa-beat-fade"></i
+        ></a>
+        <a href="https://www.instagram.com/malaikatariq345?igsh=MXViYnFxYXQ2Ymx2Mg==" target="_blank"
+          ><i class="fa-brands fa-instagram fa-beat-fade"></i
+        ></a>
+        <a href="https://wa.me/923379918720" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/malaikatariq345" target="_blank"
+          ><i class="fa-brands fa-linkedin-in fa-beat-fade"></i
+        ></a>
+        </div>  
+      </div>
+        </main>
+      </div>
+    </div>
+    <hr />
+    <footer class="footer-container">
+      <div class="footer-content">Made with love by Malaika</div>
+      
+    </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Full Stack Developer", "Frontend Engineer", "Web Designer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        cursorChar: "|",
+        loop: true,
+      });
+
+      // project image section
+      function hoverImage1(element) {
+        element.src = "public/HSM_registration_img.jpg";
+      }
+
+      function unhoverImage1(element) {
+        element.src = "public/HSM_P2.jpg";
+      }
+
+      function hoverImage2(element) {
+        element.src = "public/Screenshot (119).png";
+      }
+
+      function unhoverImage2(element) {
+        element.src = "public/Screenshot (119).png";
+      }
+
+      function hoverImage3(element) {
+        element.src = "public/taskmanager.png";
+      }
+
+      function unhoverImage3(element) {
+        element.src = "public/taskmanager.png";
+      }
+
+      function hoverImage4(element) {
+        element.src = "public/Picsart_25-08-24_03-33-19-474.jpg";
+      }
+
+      function unhoverImage4(element) {
+        element.src = "public/Picsart_25-08-24_03-33-19-474.jpg";
+      }
+      function hoverImage5(element) {
+        element.src = "public/Screenshot (123).png";
+      }
+
+      function unhoverImage5(element) {
+        element.src = "public/Screenshot (123).png";
+      }
+
+      // JavaScript to hide the splash screen when the page is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        var splashScreen = document.getElementById("splash-screen");
+        if (splashScreen) {
+          var delay = 8000;
+
+          setTimeout(function () {
+            splashScreen.classList.add("hidden");
+
+            setTimeout(function () {
+              splashScreen.style.display = "none";
+            }, 1000);
+          }, delay);
+        }
+      });
+
+      // Contact form submission
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("myForm");
+        const alertDialog = document.querySelector(".alert");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const firstName = document.getElementById("first-name").value.trim();
+          const lastName = document.getElementById("last-name").value.trim();
+          const email = document.getElementById("e-mail").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          // Regular expression for a valid email address format ending with gmail.com
+          const emailRegex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+
+          if (firstName === "" || lastName === "" || message === "") {
+            alertDialog.style.backgroundColor = "red";
+            alertDialog.style.color = "white";
+            alertDialog.style.display = "flex";
+            alertDialog.innerHTML =
+              "Ensure that all fields are filled out accurately.";
+          } else if (!email.match(emailRegex)) {
+            alertDialog.style.backgroundColor = "red";
+            alertDialog.style.color = "white";
+            alertDialog.style.display = "flex";
+            alertDialog.innerHTML = "The email entered is invalid.";
+          } else {
+            alertDialog.style.backgroundColor = "green";
+            alertDialog.style.color = "white";
+            alertDialog.style.display = "flex";
+            alertDialog.innerHTML =
+              "Thanks for your message. I'll respond soon.";
+            form.reset();
+
+            setTimeout(function () {
+              alertDialog.style.display = "none";
+            }, 3000);
+          }
+        });
+      });
+
+      // scroll to top when reloaded
+      $(document).ready(function () {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          1000
+        );
+      });
+    </script>
+  </body>
+</html>

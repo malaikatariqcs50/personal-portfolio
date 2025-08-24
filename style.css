@@ -614,6 +614,12 @@ section .text-box {
 .educonnect-project img{
   margin-top: 50px;
 }
+.task-project{
+  height: 400px;
+}
+.task-project img{
+  margin-top: 50px;
+}
 
 .resume-project{
   height: 350px;

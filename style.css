@@ -752,12 +752,13 @@ hr {
   margin-bottom: 10px;
 }
 
-.skills-grid{
+.skills-grid {
   margin: 3%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px; /* increased a bit for clarity */
 }
+
 
 .skills-grid h3{
   color: rgb(200, 200,200);
@@ -1188,12 +1189,46 @@ textarea:not(:placeholder-shown) ~ label {
   .form {
     width: 70%;
   }
+
+  .educonnect-project{
+    height: auto;
+  }
+
+  .task-project{
+    height: auto;
+  }
+
+  .resume-project{
+    height: auto;
+  }
+
+  .ezitech-project{
+    height: auto;
+  }
+
 }
 
 @media screen and (max-width: 680px) {
   .form {
     width: 90%;
   }
+
+  .educonnect-project{
+    height: auto;
+  }
+
+  .task-project{
+    height: auto;
+  }
+
+  .resume-project{
+    height: auto;
+  }
+
+  .ezitech-project{
+    height: auto;
+  }
+
 }
 
 @media screen and (max-width: 500px) {

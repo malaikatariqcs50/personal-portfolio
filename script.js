@@ -1,65 +1,33 @@
+﻿// Preserve the original scroll reveals, typing, anchor navigation and back-to-top behavior.
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal, .revealtop");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
+  document.querySelectorAll('.reveal, .revealtop').forEach((element) => {
+    element.classList.toggle('active', element.getBoundingClientRect().top < window.innerHeight - 80);
+  });
 }
+const backToTop = document.getElementById('button');
+function updateScroll() {
+  reveal();
+  backToTop.classList.toggle('show', window.scrollY > 300);
+}
+window.addEventListener('scroll', updateScroll, { passive: true });
+window.addEventListener('resize', reveal);
+updateScroll();
 
-window.addEventListener("scroll", reveal);
-
-/* arrow onclick scroll down */
-document.addEventListener("DOMContentLoaded", function () {
-  const arrow = document.querySelector(".arrow");
-
-  arrow.addEventListener("click", () => {
-    const scrollDistance = window.innerHeight;
-    window.scrollBy(0, scrollDistance);
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (typeof Typed !== 'undefined' && !reducedMotion.matches) {
+  document.getElementById('element').textContent = '';
+  new Typed('#element', {
+    strings: ['Software Engineer', 'Full Stack Developer', 'Frontend Engineer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    cursorChar: '|',
+    loop: true,
   });
-});
-
-// bottom to top button script
-
-$(document).ready(function () {
-  var btn = $("#button");
-
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass("show");
-    } else {
-      btn.removeClass("show");
-    }
-  });
-
-  btn.on("click", function (e) {
-    e.preventDefault();
-    window.scrollTo(0, 0);
-  });
-});
-
-// links for directing to specific content to tag
-document.addEventListener("DOMContentLoaded", function() {
-  const navItems = document.querySelectorAll(".__container [data-section]");
-
-  navItems.forEach(function(item) {
-      item.addEventListener("click", function() {
-          const targetId = this.getAttribute("data-section");
-          const targetSection = document.getElementById(targetId);
-          
-          if (targetSection) {
-              window.scrollTo({
-                  top: targetSection.offsetTop,
-                  behavior: "smooth"
-              });
-          }
-      });
+}
+// The fixed header itself is not a scroll destination; Home always returns to the top.
+document.querySelectorAll('a[href="#home"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
   });
 });

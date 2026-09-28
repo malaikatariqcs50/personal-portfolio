@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Malaika's Portfolio</title>
-    <link href="public\icon.png" rel="icon" type="image/gif" />
+    <title>Malaika Tariq | Software Engineer</title>
+    <meta
+      name="description"
+      content="Software Engineer building production web applications, financial workflows, and AI-assisted products with Next.js, React, and TypeScript."
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Back to top button styling-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
       rel="stylesheet"
@@ -22,16 +21,12 @@
       rel="stylesheet"
     />
     <!-- /Back to top button styling-->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script
-      src="https://kit.fontawesome.com/9fa51d37bd.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="public/vendor/typed.umd.js" defer></script>
+    <link rel="stylesheet" href="public/vendor/fontawesome/css/all.min.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <a id="button"></a>
+    <a id="button" href="#home" aria-label="Back to top"></a>
     <div class="header" id="home">
       <div class="logo">
         <h2>Malaika</h2>
@@ -41,12 +36,12 @@
         <div class="navbar2">
           <div class="header2">
             <ul class="menu2">
-              <li data-section="home">Home</li>
-              <li data-section="about">About</li>
-              <li data-section="project">Project</li>
-              <li data-section="experience">Experience</li>
-              <li data-section="skills">Skills</li>
-              <li data-section="contact">Contact</li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Project</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -56,27 +51,36 @@
     <div id="header-container">
       <div class="content">
         <h1>Hi, I'm Malaika Tariq</h1>
-        <span id="element"></span>
+        <span id="element">Software Engineer</span>
         <hr />
         <p>
-          I am deeply passionate about technology and its advancements. The
-          ubiquitous presence of computers only serves to intensify my
-          curiosity. I am dedicated, punctual, and value being a dependable team
-          player.
+          I build production web applications and intelligent, data-driven
+          products. Currently turning complex financial workflows into reliable
+          software at Zyada Credit with Next.js, React, and TypeScript.
         </p>
         <div class="social_media">
           <div>
             <a
-              href="https://www.linkedin.com/in/malaikatariq345"
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/malaika-tariq-1015zoro/"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fa-brands fa-linkedin fa-bounce button"></i
             ></a>
-            <a href="https://github.com/malaikatariqcs50" target="_blank"
+            <a
+              aria-label="GitHub"
+              href="https://github.com/malaikatariqcs50"
+              target="_blank"
+              rel="noopener noreferrer"
               ><i class="fa-brands fa-github fa-beat button"></i
             ></a>
           </div>
           <div class="resume-container">
-            <a href="./public/presume_compressed.pdf" target="_blank">
+            <a
+              href="./public/presume_compressed.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div class="resume">
                 <div class="text">Resume</div>
               </div>
@@ -85,10 +89,14 @@
         </div>
       </div>
 
-      <div class="card">
+      <div
+        class="card"
+        tabindex="0"
+        aria-label="Malaika Tariq. Hover or focus to see hobbies."
+      >
         <div class="__content">
           <div class="front">
-            <img class="myPic" src="public/myself.jpg" alt="photo" />
+            <img class="myPic" src="public/myself.jpg" alt="Malaika Tariq" />
           </div>
           <div class="back">
             <h1>HOBBIES</h1>
@@ -112,12 +120,23 @@
           <h1>A Bit About Me</h1>
           <br />
           <p>
-            I'm currently in my 3rd year, persuing a Computer Science degree at
-            National University of Modern Languages in Islamabad. As a developer, I've collaborated with
-            teams to create functional applications and write clean,
-            maintainable code, gaining valuable experience in web development. I
-            also enjoy contributing to open-source projects and in my free
-            time, I relax and uplift my mood through cooking.
+            I'm a Software Engineer with 1+ year of hands-on experience building
+            production web applications, alongside my BS in Computer Science at
+            NUML, Islamabad. My strongest depth is in frontend engineering,
+            supported by full-stack experience and a growing understanding of
+            the systems behind the interface.
+          </p>
+          <p>
+            At Zyada Credit, I build financial interfaces, integrate REST APIs,
+            and work on authentication, bilingual experiences, and testing.
+            Before that, my MERN internship at Ezitech gave me a foundation in
+            database-backed administrative systems and business workflow
+            automation.
+          </p>
+          <p>
+            I enjoy translating complicated requirements into software people
+            can use, especially in FinTech, enterprise applications, and
+            AI-assisted products.
           </p>
         </div>
       </div>
@@ -125,7 +144,7 @@
 
     <!-- Scroll Content -->
     <section class="wave-container">
-      <h1 class="wave">
+      <div class="wave">
         <span style="--i: 1">S</span>
         <span style="--i: 2">c</span>
         <span style="--i: 3">r</span>
@@ -138,272 +157,493 @@
         <span style="--i: 9">w</span>
         <span style="--i: 10">n</span>
         <br />
-        <div class="arrow">
+        <a class="arrow" href="#experience" aria-label="Scroll to experience">
           <span></span>
           <span></span>
-        </div>
-      </h1>
-    </section>
-    <section id="project">
-      <div class="container reveal">
-        <div class="projects">
-          <span class="letter">P</span>
-          <span class="letter">r</span>
-          <span class="letter">o</span>
-          <span class="letter">j</span>
-          <span class="letter">e</span>
-          <span class="letter">c</span>
-          <span class="letter">t</span>
-          <span class="letter">s</span>
-        </div>
-
-        <div class="text-box educonnect-project">
-          <div>
-            <a
-              target="_blank"
-              href="https://educonnect-eta.vercel.app/"
-            >
-              <img
-                src="public/Screenshot (119).png"
-                alt="image"
-                onmouseover="hoverImage2(this)"
-                onmouseout="unhoverImage2(this)"
-              />
-            </a>
-          </div>
-          <div class="project-content">
-            <h1>EduConnect</h1>
-            <p>
-              A full-stack MERN + Tailwind CSS online learning platform with secure user
-              authentication.
-              Implemented video lessons, automated progress tracking, interactive exercises, and
-              achievement badges for student engagement.
-              Developed features for ratings, course resources, and integrated student support.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/malaikatariqcs50/Educonnect"
-                target="_blank"
-                ><i class="fa-brands fa-github fa-beat"></i
-              ></a>
-              <a href="https://educonnect-eta.vercel.app/" target="_blank" class="tags">Visit Live Website</a>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
     </section>
-
-    <section>
+    <section id="experience">
+      <div
+        class="projects"
+        role="heading"
+        aria-level="2"
+        aria-label="Experience"
+      >
+        <span class="letter" aria-hidden="true">E</span
+        ><span class="letter" aria-hidden="true">x</span
+        ><span class="letter" aria-hidden="true">p</span
+        ><span class="letter" aria-hidden="true">e</span
+        ><span class="letter" aria-hidden="true">r</span
+        ><span class="letter" aria-hidden="true">i</span
+        ><span class="letter" aria-hidden="true">e</span
+        ><span class="letter" aria-hidden="true">n</span
+        ><span class="letter" aria-hidden="true">c</span
+        ><span class="letter" aria-hidden="true">e</span>
+      </div>
       <div class="container reveal">
         <div class="text-container">
-          <div class="text-box task-project">
-            <a target="_blank" href="https://github.com/malaikatariqcs50/task-manager/">
+          <article class="text-box work-row zyada-project">
+            <figure class="project-image">
               <img
-                src="public/taskmanager.png"
-                alt="image"
-                onmouseover="hoverImage3(this)"
-                onmouseout="unhoverImage3(this)"
+                src="public/zyada-credit.png"
+                alt="Zyada Credit website introducing its AI-powered SME credit decisioning platform"
+                loading="lazy"
+                width="1281"
+                height="621"
               />
-            </a>
+              <figcaption>
+                AI-assisted credit assessment for financial institutions.
+              </figcaption>
+            </figure>
             <div class="project-content">
-              <h1>Task Manager</h1>
+              <p class="eyebrow">Sept 2025 - Sept 2026</p>
+              <h1>Zyada Credit</h1>
+              <p class="role">Frontend Engineer</p>
               <p>
-                A dynamic Task Management application with PHP for backend and HTML, CSS, JavaScript for frontend. Implemented CRUD operations (add, edit, delete) and task status updates (Pending, Completed, Canceled). Integrated <span>drag-and-drop</span> functionality for intuitive task reordering. Ensured a responsive and user-friendly interface for seamless task organization.
+                Building production interfaces for an AI-powered SME credit
+                assessment and commercial lending platform designed for
+                financial institutions in the MENA/GCC ecosystem.
               </p>
+              <ul class="contributions">
+                <li>
+                  Contributed to 10+ modules spanning financial statements,
+                  KYC/KYB, credit assessment, risk, analytics, and
+                  subscriptions.
+                </li>
+                <li>
+                  Integrated 20+ REST workflows with authentication, validation,
+                  server-state management, and document uploads.
+                </li>
+                <li>
+                  Worked on English/Arabic interfaces with RTL/LTR support,
+                  session handling, and automated frontend tests.
+                </li>
+              </ul>
+              <ul
+                class="technology-tags"
+                aria-label="Zyada Credit technologies"
+              >
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Redux Toolkit</li>
+                <li>TanStack Query</li>
+                <li>Material UI</li>
+              </ul>
               <div class="project-links">
                 <a
-                  href="https://github.com/malaikatariqcs50/task-manager/"
+                  href="https://zyada.sa/"
                   target="_blank"
-                  ><i class="fa-brands fa-github fa-beat"></i
-                ></a>
-                <button class="tags">Php</button>
-                <button class="tags">javascript</button>
+                  rel="noopener noreferrer"
+                  class="tags"
+                  >Visit Live Website</a
+                >
               </div>
+              <a class="text-link" href="#zyada-case-study"
+                >Explore the engineering work →</a
+              >
             </div>
-          </div>
+          </article>
         </div>
       </div>
-    </section>
-
-    <section>
       <div class="container reveal">
-        <div class="text-container ">
-          <div class="text-box resume-project">
-            <a target="_blank" href="https://github.com/malaikatariqcs50/resume">
-              <img
-                src="public/Picsart_25-08-24_03-33-19-474.jpg"
-                alt="image"
-                onmouseover="hoverImage4(this)"
-                onmouseout="unhoverImage4(this)"
-              />
-            </a>
+        <div class="text-container">
+          <article class="text-box work-row ezitech-project">
+            <figure class="project-image">
+              <a
+                href="https://register.ezitech.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="public/Screenshot%20(123).png"
+                  alt="Ezitech portal interface"
+                  loading="lazy"
+                  width="1366"
+                  height="768"
+              /></a>
+              <figcaption>
+                Full-stack development across administrative and operational
+                systems.
+              </figcaption>
+            </figure>
             <div class="project-content">
-              <h1>Resume</h1>
+              <p class="eyebrow">May — July 2025 · Remote</p>
+              <h1>Ezitech</h1>
+              <p class="role">Full-Stack Developer Intern</p>
               <p>
-                Created this custom resume with HTML, CSS, and Tailwind CSS, featuring
-print-specic styling for professional PDF and hard copy formats
+                Worked alongside senior developers in an existing MERN codebase,
+                contributing to admin, manager, public-profile, and
+                university-related workflows.
               </p>
-              <div class="project-links">
-                <a
-                  href="https://github.com/malaikatariqcs50/resume"
-                  target="_blank"
-                  ><i class="fa-brands fa-github fa-beat"></i
-                ></a>
-                <button class="tags">Html</button>
-                <button class="tags">Css</button>
-                <button class="tags">Tailwind</button>
-              </div>
+              <ul class="contributions">
+                <li>
+                  Developed frontend and backend functionality for candidate
+                  filtering, verification, and role-based access.
+                </li>
+                <li>
+                  Contributed to Node.js workflows for salary distribution,
+                  payment verification, and applicant validation.
+                </li>
+                <li>
+                  Connected database-backed interfaces to REST APIs and
+                  collaborated on real product requirements.
+                </li>
+              </ul>
+              <ul class="technology-tags" aria-label="Ezitech technologies">
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>REST APIs</li>
+              </ul>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
     <hr />
     <br />
-
-    <section id="experience">
-      <div class="container reveal">
-        <div class="projects">
-          <span class="letter">E</span>
-          <span class="letter">x</span>
-          <span class="letter">p</span>
-          <span class="letter">e</span>
-          <span class="letter">r</span>
-          <span class="letter">i</span>
-          <span class="letter">e</span>
-          <span class="letter">n</span>
-          <span class="letter">c</span>
-          <span class="letter">e</span>
-        </div>
-
-        <section>
+    <section id="project">
+      <div class="projects" role="heading" aria-level="2" aria-label="Projects">
+        <span class="letter" aria-hidden="true">P</span
+        ><span class="letter" aria-hidden="true">r</span
+        ><span class="letter" aria-hidden="true">o</span
+        ><span class="letter" aria-hidden="true">j</span
+        ><span class="letter" aria-hidden="true">e</span
+        ><span class="letter" aria-hidden="true">c</span
+        ><span class="letter" aria-hidden="true">t</span
+        ><span class="letter" aria-hidden="true">s</span>
+      </div>
       <div class="container reveal">
         <div class="text-container">
-          <div class="text-box ezitech-project">
-            <a href="https://register.ezitech.org/" target="_blank">
+          <article
+            class="text-box work-row zyada-case-study"
+            id="zyada-case-study"
+          >
+            <figure class="project-image">
               <img
-                src="public/Screenshot (123).png"
-                alt="image"
-                onmouseover="hoverImage5(this)"
-                onmouseout="unhoverImage5(this)"
+                src="public/zyada-bank-analysis.png"
+                alt="Zyada Credit website introducing its AI-powered SME credit decisioning platform"
+                loading="lazy"
+                width="1281"
+                height="621"
               />
-              </a>
+            </figure>
             <div class="project-content">
-              <h1>Ezitech Company</h1>
-              <p>
-                <span>Mern Stack Developer</span><br><br>
-                Completed and enhanced Admin Panel with student/manager tracking,
-                automated salary distribution, and secure invoice/payment verication.
-                Implemented Manager Portal features: certicate issuance, salary
-                withdrawals, task tracking, and compliance alerts.
-                Developed Public Prole system with verication, recommendations,
-                and advanced candidate lters.
-                Built University, HR, and 3rd-Party Aliate portals for student tracking,
-                hiring, and referral management.
+              <p class="eyebrow">
+                Featured work · Production platform &amp; final year project
               </p>
+              <h1>Zyada Credit</h1>
+              <p>
+                SME lending brings together financial documents, risk analysis,
+                and multiple decision stages. This platform connects those
+                stages into a digital credit assessment workflow.
+              </p>
+              <p>
+                My contribution focuses on product interfaces and API
+                integration around AI-assisted financial systems: from dynamic
+                financial-year forms and consistency checks to multi-stage
+                assessments and decision summaries.
+              </p>
+              <details>
+                <summary>Engineering challenges &amp; contributions</summary>
+                <ul class="contributions">
+                  <li>
+                    <strong>Financial correctness:</strong> dynamic statement
+                    data, calculated totals, missing-data warnings, and
+                    validation such as Assets = Equity + Liabilities.
+                  </li>
+                  <li>
+                    <strong>Workflow state:</strong> nested assessment data,
+                    weighted scores, and draft, submitted, approved, or declined
+                    states.
+                  </li>
+                  <li>
+                    <strong>Reliable interfaces:</strong> upload progress, retry
+                    and error states, protected routes, and cross-tab session
+                    behavior.
+                  </li>
+                  <li>
+                    <strong>Production debugging:</strong> resolving
+                    browser-only storage access during Next.js rendering and
+                    tracing frontend/backend API mismatches.
+                  </li>
+                </ul>
+              </details>
+              <ul class="technology-tags" aria-label="Featured work areas">
+                <li>Financial validation</li>
+                <li>API integration</li>
+                <li>RTL/LTR</li>
+                <li>Testing</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container reveal">
+        <div class="text-container">
+          <article class="text-box work-row educonnect-project">
+            <figure class="project-image">
+              <a
+                href="https://educonnect-eta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="public/Screenshot%20(119).png"
+                  alt="EduConnect learning platform website"
+                  loading="lazy"
+                  width="1366"
+                  height="768"
+              /></a>
+              <figcaption>
+                A learning platform for students and instructors.
+              </figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="eyebrow">Full-stack learning platform</p>
+              <h1>EduConnect</h1>
+              <p>
+                A role-based learning platform where students discover courses,
+                enroll, and track their progress, while instructors publish and
+                manage course content.
+              </p>
+              <p>
+                Built JWT authentication, protected student/instructor flows,
+                REST APIs, and MongoDB persistence. Lesson-level progress
+                tracking automatically calculates overall course completion.
+              </p>
+              <ul class="technology-tags" aria-label="EduConnect technologies">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+              </ul>
               <div class="project-links">
-                <button class="tags">Mern</button>
-                <button class="tags">Php</button>
-                <button class="tags">Restful Api</button>
+                <a
+                  href="https://github.com/malaikatariqcs50/Educonnect"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github fa-beat" aria-hidden="true"></i
+                  ><span class="sr-only">View project on GitHub</span></a
+                ><a
+                  href="https://educonnect-eta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tags"
+                  >Visit Live Website</a
+                >
               </div>
             </div>
-          </div>
+          </article>
+        </div>
+      </div>
+      <div class="container reveal">
+        <div class="text-container">
+          <article class="text-box work-row clouddrive-project">
+            <figure class="project-image">
+              <a
+                href="https://github.com/malaikatariqcs50/google-drive-clone"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="public/homepage.png"
+                  alt="CloudDrive illustration showing cloud file storage"
+                  loading="lazy"
+                  width="640"
+                  height="360"
+              /></a>
+              <figcaption>
+                CloudDrive illustration · Application screenshot coming soon.
+              </figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="eyebrow">Google Drive clone</p>
+              <h1>CloudDrive</h1>
+              <p>
+                A MERN cloud file-management application with file uploads,
+                folders, sharing, and JWT-authenticated access.
+              </p>
+              <p>
+                Developed REST APIs and a responsive frontend to connect
+                authenticated users with their files and keep file-management
+                workflows accessible.
+              </p>
+              <ul class="technology-tags" aria-label="CloudDrive technologies">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/malaikatariqcs50/google-drive-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github fa-beat" aria-hidden="true"></i
+                  ><span class="sr-only">View project on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-      </div>
-    </section>
-
+    <hr />
+    <br />
     <div class="skills-container" id="skills">
       <div class="container reveal">
-        <div class="">
-          <div class="skills-header">
-            <span class="letter">S</span>
-            <span class="letter">k</span>
-            <span class="letter">i</span>
-            <span class="letter">l</span>
-            <span class="letter">l</span>
-            <span class="letter">s</span>
-          </div>
-          <div class="skills-grid">
-            <div class="skill-grid container reveal frontend">
-              <div class="text-container">
-                <div class="text-box">
-              <h3>Languages</h3>
-              <br>
-              <br>
-                <h4>Expert</h4>
-                <br>
-                  <li>JavaScript</li>
+        <div
+          class="skills-header"
+          role="heading"
+          aria-level="2"
+          aria-label="Skills"
+        >
+          <span class="letter" aria-hidden="true">S</span
+          ><span class="letter" aria-hidden="true">k</span
+          ><span class="letter" aria-hidden="true">i</span
+          ><span class="letter" aria-hidden="true">l</span
+          ><span class="letter" aria-hidden="true">l</span
+          ><span class="letter" aria-hidden="true">s</span>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-grid container reveal">
+            <div class="text-container">
+              <div class="text-box">
+                <h3>Languages</h3>
+                <br /><br />
+                <ul>
                   <li>TypeScript</li>
-                  <li>Php</li>
-                  <br>
-                <h4>Basic</h4>
-                <li>Python (basic)</li>
-                <li>C/C++/C# (basic)</li>
-                <li>Java (basic)</li>
-                </div>
+                  <li>JavaScript</li>
+                  <li>C++ · DSA practice</li>
+                  <li>SQL</li>
+                  <li>HTML &amp; CSS</li>
+                </ul>
               </div>
             </div>
-            <div class="skill-grid container revealtop backend">
-              <div class="text-container">
-                <div class="text-box">
-              <h3>Frameworks/Libraries</h3>
-              <br>
-              <br>
-              <h4>Expert</h4>
-              <br>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Node (+Express)</li>
-              <li>Tailwindcss, MUI</li>
-              <br>
-              <h4>Basic</h4>
-              <li>Laravel (basic)</li>
-              <li>.NET (basic)</li>
-                </div>
+          </div>
+          <div class="skill-grid container revealtop">
+            <div class="text-container">
+              <div class="text-box">
+                <h3>Frontend</h3>
+                <br /><br />
+                <ul>
+                  <li>React &amp; Next.js</li>
+                  <li>Redux Toolkit</li>
+                  <li>TanStack Query</li>
+                  <li>Material UI &amp; Tailwind CSS</li>
+                  <li>Responsive design</li>
+                  <li>RTL/LTR interfaces</li>
+                </ul>
               </div>
             </div>
-            <div class="skill-grid container reveal cloud">
-              <div class="text-container">
-                <div class="text-box">
-
-              <h3>Cloud/Database</h3>
-              <br>
-              <br>
-              <h4>Expert</h4>
-              <br>
-              <li>MongoDb</li>
-              <li>MySql</li>
-              <li>NoSql</li>
-              <li>PostgreSql</li>
-              <li>Aws</li>
-              <li>Cloudinary</li>
-                                
-                </div>
+          </div>
+          <div class="skill-grid container reveal">
+            <div class="text-container">
+              <div class="text-box">
+                <h3>Backend / Databases</h3>
+                <br /><br />
+                <ul>
+                  <li>Node.js &amp; Express.js</li>
+                  <li>NestJS exposure</li>
+                  <li>REST APIs &amp; validation</li>
+                  <li>JWT authentication &amp; RBAC</li>
+                  <li>MongoDB &amp; MySQL</li>
+                  <li>PostgreSQL &amp; SQL Server</li>
+                </ul>
               </div>
             </div>
-            <div class="skill-grid conatiner revealtop database">
-              <div class="text-container">
-                <div class="text-box">
-
-              <h3>Tools</h3>
-              <br><br>
-              <h4>Expert</h4>
-              <br>
-              <li>CI/CD</li>
-              <li>Vercel and more</li>
-              <li>Git, Github</li>
-              <li>Postman</li>
-                                
-                </div>
+          </div>
+          <div class="skill-grid container revealtop">
+            <div class="text-container">
+              <div class="text-box">
+                <h3>Tools / Engineering</h3>
+                <br /><br />
+                <ul>
+                  <li>Git &amp; GitHub</li>
+                  <li>Postman &amp; Swagger</li>
+                  <li>Docker &amp; Docker Compose</li>
+                  <li>VS Code &amp; npm</li>
+                  <li>Vitest · Unit &amp; integration testing</li>
+                  <li>State management &amp; caching</li>
+                  <li>Technical documentation</li>
+                  <li>Production debugging</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <section
+      class="education-section"
+      id="education"
+      aria-labelledby="education-heading"
+    >
+      <div class="container reveal">
+        <div
+          class="projects"
+          role="heading"
+          aria-level="2"
+          id="education-heading"
+          aria-label="Education &amp; Growth"
+        >
+          <span class="letter" aria-hidden="true">E</span
+          ><span class="letter" aria-hidden="true">d</span
+          ><span class="letter" aria-hidden="true">u</span
+          ><span class="letter" aria-hidden="true">c</span
+          ><span class="letter" aria-hidden="true">a</span
+          ><span class="letter" aria-hidden="true">t</span
+          ><span class="letter" aria-hidden="true">i</span
+          ><span class="letter" aria-hidden="true">o</span
+          ><span class="letter" aria-hidden="true">n</span
+          ><span class="letter" aria-hidden="true">&#160;</span
+          ><span class="letter" aria-hidden="true">&</span
+          ><span class="letter" aria-hidden="true">&#160;</span
+          ><span class="letter" aria-hidden="true">G</span
+          ><span class="letter" aria-hidden="true">r</span
+          ><span class="letter" aria-hidden="true">o</span
+          ><span class="letter" aria-hidden="true">w</span
+          ><span class="letter" aria-hidden="true">t</span
+          ><span class="letter" aria-hidden="true">h</span>
+        </div>
+        <div class="growth-grid">
+          <article class="growth-card">
+            <p class="eyebrow">September 2023 — June 2027 (Expected)</p>
+            <h3>BS Computer Science</h3>
+            <p>
+              National University of Modern Languages (NUML), Islamabad — Main
+              Campus
+            </p>
+            <p class="highlight">CGPA 3.81 / 4.00</p>
+            <p>
+              Building foundations in algorithms, databases, operating systems,
+              networks, software engineering, and machine learning.
+            </p>
+          </article>
+          <article class="growth-card">
+            <p class="eyebrow">Problem solving</p>
+            <h3>130+ LeetCode problems</h3>
+            <p>
+              I practice Data Structures and Algorithms in C++, focusing on
+              reusable patterns, algorithmic reasoning, and time and space
+              complexity.
+            </p>
+            <p>
+              From two pointers and binary search to trees, graphs, and heaps, I
+              aim to understand why a solution works.
+            </p>
+          </article>
+        </div>
+        <div class="learning">
+          <h3>Currently exploring</h3>
+          <p>
+            Advanced DSA · Backend engineering · System architecture ·
+            AI-enabled applications
+          </p>
+        </div>
+      </div>
+    </section>
     <div class="" id="contact">
       <div class="container reveal">
         <main>
@@ -432,150 +672,44 @@ print-specic styling for professional PDF and hard copy formats
             <span class="letter">h</span>
           </div>
           <div class="mycontact">
-          <div class="footer-icons">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malaikatariq800@gmail.com" target="_blank"
-          ><i class="fa-solid fa-envelope fa-beat-fade"></i
-        ></a>
-        <a href="https://www.instagram.com/malaikatariq345?igsh=MXViYnFxYXQ2Ymx2Mg==" target="_blank"
-          ><i class="fa-brands fa-instagram fa-beat-fade"></i
-        ></a>
-        <a href="https://wa.me/923379918720" target="_blank">
-          <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/malaikatariq345" target="_blank"
-          ><i class="fa-brands fa-linkedin-in fa-beat-fade"></i
-        ></a>
-        </div>  
-      </div>
+            <div class="footer-icons">
+              <a
+                aria-label="Email Malaika"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=malaikatariq800@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-envelope fa-beat-fade"></i
+              ></a>
+              <a
+                aria-label="Instagram"
+                href="https://www.instagram.com/malaikatariq345?igsh=MXViYnFxYXQ2Ymx2Mg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram fa-beat-fade"></i
+              ></a>
+              <a
+                aria-label="WhatsApp"
+                href="https://wa.me/923379918720"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+              </a>
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/malaika-tariq-1015zoro/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin-in fa-beat-fade"></i
+              ></a>
+            </div>
+          </div>
         </main>
       </div>
     </div>
     <hr />
     <footer class="footer-container">
       <div class="footer-content">Made with love by Malaika</div>
-      
     </footer>
-
-    <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Full Stack Developer", "Frontend Engineer", "Web Designer"],
-        typeSpeed: 50,
-        backSpeed: 50,
-        cursorChar: "|",
-        loop: true,
-      });
-
-      // project image section
-      function hoverImage1(element) {
-        element.src = "public/HSM_registration_img.jpg";
-      }
-
-      function unhoverImage1(element) {
-        element.src = "public/HSM_P2.jpg";
-      }
-
-      function hoverImage2(element) {
-        element.src = "public/Screenshot (119).png";
-      }
-
-      function unhoverImage2(element) {
-        element.src = "public/Screenshot (119).png";
-      }
-
-      function hoverImage3(element) {
-        element.src = "public/taskmanager.png";
-      }
-
-      function unhoverImage3(element) {
-        element.src = "public/taskmanager.png";
-      }
-
-      function hoverImage4(element) {
-        element.src = "public/Picsart_25-08-24_03-33-19-474.jpg";
-      }
-
-      function unhoverImage4(element) {
-        element.src = "public/Picsart_25-08-24_03-33-19-474.jpg";
-      }
-      function hoverImage5(element) {
-        element.src = "public/Screenshot (123).png";
-      }
-
-      function unhoverImage5(element) {
-        element.src = "public/Screenshot (123).png";
-      }
-
-      // JavaScript to hide the splash screen when the page is fully loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        var splashScreen = document.getElementById("splash-screen");
-        if (splashScreen) {
-          var delay = 8000;
-
-          setTimeout(function () {
-            splashScreen.classList.add("hidden");
-
-            setTimeout(function () {
-              splashScreen.style.display = "none";
-            }, 1000);
-          }, delay);
-        }
-      });
-
-      // Contact form submission
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("myForm");
-        const alertDialog = document.querySelector(".alert");
-
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          const firstName = document.getElementById("first-name").value.trim();
-          const lastName = document.getElementById("last-name").value.trim();
-          const email = document.getElementById("e-mail").value.trim();
-          const message = document.getElementById("message").value.trim();
-
-          // Regular expression for a valid email address format ending with gmail.com
-          const emailRegex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
-
-          if (firstName === "" || lastName === "" || message === "") {
-            alertDialog.style.backgroundColor = "red";
-            alertDialog.style.color = "white";
-            alertDialog.style.display = "flex";
-            alertDialog.innerHTML =
-              "Ensure that all fields are filled out accurately.";
-          } else if (!email.match(emailRegex)) {
-            alertDialog.style.backgroundColor = "red";
-            alertDialog.style.color = "white";
-            alertDialog.style.display = "flex";
-            alertDialog.innerHTML = "The email entered is invalid.";
-          } else {
-            alertDialog.style.backgroundColor = "green";
-            alertDialog.style.color = "white";
-            alertDialog.style.display = "flex";
-            alertDialog.innerHTML =
-              "Thanks for your message. I'll respond soon.";
-            form.reset();
-
-            setTimeout(function () {
-              alertDialog.style.display = "none";
-            }, 3000);
-          }
-        });
-      });
-
-      // scroll to top when reloaded
-      $(document).ready(function () {
-        $("html, body").animate(
-          {
-            scrollTop: 0,
-          },
-          1000
-        );
-      });
-    </script>
   </body>
 </html>
